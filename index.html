@@ -5,8 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poisar Bank</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <h1 class="text-5xl text-center mt-16 text-teal-500 font-semibold">Welcome To Poisar Bank</h1>
+
+    <section>
+        <div class="bg-fuchsia-400 w-2/4 mx-auto mt-16 p-5">
+            <h1 class="text-3xl text-white">Login To Poisar Bank</h1>
+            <div class="form">
+                <input class="block mt-5 mb-2 w-2/4 p-1 rounded" type="text" name="email" id="login-mail" placeholder="Enter your e-mail">
+                <input class="block mb-2 w-2/4 p-1 rounded" type="password" name="password" id="login-password" placeholder="Enter your password">
+                <button id="login-submit" class="mt-2 bg-slate-500 px-4 py-1 text-white rounded">Login</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/login.js"></script>
 </body>
 </html>

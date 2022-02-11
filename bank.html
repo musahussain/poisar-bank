@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account . Poisar Bank</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="text-5xl text-center mt-16 font-semibold text-purple-500">Welcome To Your Account</h1>
+
+
+    <section class="w-3/4 grid grid-cols-3 gap-4 mx-auto mt-16">
+        <div class="bg-purple-400 p-3 text-white rounded text-center">
+            <p class="text-xl">Deposit</p>
+            <p class="text-3xl">$<span id="deposit-balance">00</span></p>
+        </div>
+
+        <div class="bg-indigo-400 p-3 text-white rounded text-center">
+            <p class="text-xl">Withdraw</p>
+            <p class="text-3xl">$<span id="withdraw-balance">00</span></p>
+        </div>
+
+        <div class="bg-green-500 p-3 text-white rounded text-center">
+            <p class="text-xl">Balance</p>
+            <p class="text-3xl">$<span id="main-balance">00</span></p>
+        </div>
+    </section>
+
+    <section class="w-3/4 grid grid-cols-2 gap-2 mt-16 mx-auto text-white">
+        <div class="bg-purple-400 p-2 rounded">
+            <p class="text-3xl mt-4 mb-4 mx-4">Deposit Amount</p>
+            <input class="text-zinc-400 w-3/4 rounded mb-4 mx-4 p-1" type="text" name="deposit" placeholder="Enter amount to deposit" id="deposit-input">
+            <button id="deposit-btn" class="mt-2 bg-slate-500 px-4 py-1 text-white rounded">Deposit</button>
+        </div>
+
+        <div class="bg-green-500 p-2 rounded">
+            <p class="text-3xl mt-4 mb-4 mx-4">Withdraw Amount</p>
+            <input class="text-zinc-400 w-3/4 rounded mb-4 mx-4 p-1" type="text" name="withdraw" placeholder="Enter amount to withdraw" id="withdraw-input">
+            <button id="withdraw-btn" class="mt-2 bg-slate-500 px-4 py-1 text-white rounded">Withdraw</button>
+        </div>
+    </section>
+
+    <script src="./js/banking.js"></script>
+</body>
+</html>
